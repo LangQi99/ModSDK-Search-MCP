@@ -39,9 +39,9 @@ def clean_markdown_text(text: str) -> str:
 
 
 @mcp.tool()
-def search_api_by_Chinese_keyword(keyword: str) -> str:
+def search_api_by_keyword(keyword: str) -> str:
     """
-    根据中文关键词搜索实现该功能的ModSKD-API的用法 例如：经验/在线/放置/位置/背包
+    根据英文或中文关键词搜索实现该功能的ModSKD-API的用法
     """
     result = {}
     for root, dirs, files in os.walk(root_path):
